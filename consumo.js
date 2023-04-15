@@ -1,6 +1,6 @@
 function analizar(){
-    var suscripcionkey="2a041a044aa5495899693a12e0627962";
-    var uribasi="https://2it-research.cognitiveservices.azure.com/vision/v3.2/analyze";
+    var suscripcionkey="ab22254711c343448ca0ce2e5c9d617f";
+    var uribasi="https://analizarimagenes.cognitiveservices.azure.com/vision/v3.2/analyze";
     var params = {
         "visualFeatures": "Objects",
         "visualFeatures": "Brands",
