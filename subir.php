@@ -251,7 +251,7 @@ nav{
        
 <?php
 echo '<img src="imagenes/' . $_FILES['file1']['name'] . '" width="400px" height="400px" id="ff"><br>';
-echo '<input id="urlapi" type="text" value="https://picserch.azurewebsites.net/imagenes/' .$_FILES['file1']['name'] . '">';
+echo '<input id="urlapi" type="text" value="https://analizarimagenes.cognitiveservices.azure.com/imagenes/' .$_FILES['file1']['name'] . '">';
 ?>
 <br><input type="button" value="Analizar" onclick="analizar()">
 
