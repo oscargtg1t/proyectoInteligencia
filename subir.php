@@ -254,7 +254,7 @@ echo '<img src="imagenes/' . $_FILES['file1']['name'] . '" width="400px" height=
 echo '<input id="urlapi" type="text" value="https://analizarimagenes.cognitiveservices.azure.com/imagenes/' .$_FILES['file1']['name'] . '">';
 ?>
 //<br><input type="button" value="Mostrar Resultados" onclick="analizar()">
-<br><input type="submit" value="Mostrar Resultados" onclick="analizar()">
+<br><input type="submit" value="Resultados" onclick="analizar()">
 
  </div>   
  <img src="logopicserch.png" alt="" id="logo">
