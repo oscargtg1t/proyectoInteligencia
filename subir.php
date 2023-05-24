@@ -25,6 +25,7 @@ if (!empty($_FILES)) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="consumo.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     
     
@@ -32,10 +33,11 @@ if (!empty($_FILES)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIC-SEARCH</title>
+    <title>Document</title>
     <style>
 
 #codigo{
+    overflow:auto;
     margin-left:10%;
 padding:5px;
 width:80%;
@@ -47,8 +49,8 @@ text-align:left;
 
 
 #mm1{
-    width: 50%;
-    height: 70%;
+    width: 200%;
+    height: 200%;
 }
 
         #cuadro{
@@ -251,10 +253,9 @@ nav{
        
 <?php
 echo '<img src="imagenes/' . $_FILES['file1']['name'] . '" width="400px" height="400px" id="ff"><br>';
-echo '<input id="urlapi" type="text" value="https://analizarimagenes.cognitiveservices.azure.com/imagenes/' .$_FILES['file1']['name'] . '">';
+echo '<input id="urlapi" type="text" value="https://picserch.azurewebsites.net/imagenes/' .$_FILES['file1']['name'] . '">';
 ?>
-//<br><input type="button" value="Mostrar Resultados" onclick="analizar()">
-<br><input type="submit" value="Resultados" onclick="analizar()">
+<br><input type="button" value="Analizar" onclick="analizar()">
 
  </div>   
  <img src="logopicserch.png" alt="" id="logo">
@@ -267,10 +268,9 @@ echo '<input id="urlapi" type="text" value="https://analizarimagenes.cognitivese
     <form action="subir.php"  method="POST" enctype="multipart/form-data"  id="file1" class="ffr">
 
 <br><br><br><br><br><br><br>
-<B>Resultados</B><br>
+<B>JSON IMAGEN</B><br>
 <div id="codigo">
-
-
+<embed id="bus" type="text/html" src="https://www.bing.com/search?q=comprar+tenis+verdes+adidas" width="1000px" height="1000px">
 </div>
 
 
@@ -297,12 +297,7 @@ function subir(){
         }
 </script>
 
-
-
-   <script src="consumo.js"></script>
+   
 </body>
 </html>
-
-
-
 
