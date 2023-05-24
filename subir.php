@@ -49,8 +49,8 @@ text-align:left;
 
 
 #mm1{
-    width: 200%;
-    height: 200%;
+    width: 50%;
+    height: 70%;
 }
 
         #cuadro{
@@ -270,7 +270,7 @@ echo '<input id="urlapi" type="text" value="https://picserch.azurewebsites.net/i
 <br><br><br><br><br><br><br>
 <B>JSON IMAGEN</B><br>
 <div id="codigo">
-<embed id="bus" type="text/html" src="https://www.bing.com/search?q=comprar+tenis+verdes+adidas" width="1000px" height="1000px">
+<embed id="bus" type="text/html" src="https://www.bing.com/search?q=comprar+tenis+verdes+adidas" width="4000px" height="4000px">
 </div>
 
 
