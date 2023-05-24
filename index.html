@@ -225,22 +225,21 @@ nav{
 <input type="submit" value="subir Imagen" id="envd">
       </form>
 <script>
-function subir(){
-    document.getElementById('file1').click();
-    alert('funciona');
+function subir() {
+  document.getElementById('file1').click();
+  alert('funciona');
 }
 
-    document.getElementById('file1').onchange=function(e){
-      let reader=new FileReader();
-      reader.readAsDataURL(e.target.files[0]);
-      reader.onload=function(){
-          //let preview= document.getElementById('preview');
-          imagen=document.getElementById('mm1');
-         // imagen.style.width="250px"
-          imagen.src=reader.result;
-          //preview.append(imagen);
-           }
-        }
+document.getElementById('file1').onchange = function(e) {
+  let reader = new FileReader();
+  reader.readAsDataURL(e.target.files[0]);
+  reader.onload = function() {
+    let imagen = document.getElementById('mm1');
+    imagen.src = reader.result;
+    imagen.style.width = "400px"; // Aumenta el ancho de la imagen a 400px
+    imagen.style.height = "auto"; // Permite que la altura se ajuste proporcionalmente
+  }
+}
 </script>
 
 
