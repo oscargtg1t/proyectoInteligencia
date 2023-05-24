@@ -270,7 +270,7 @@ echo '<input id="urlapi" type="text" value="https://picserch.azurewebsites.net/i
 <br><br><br><br><br><br><br>
 <B>JSON IMAGEN</B><br>
 <div id="codigo">
-<embed id="bus" type="text/html" src="https://www.bing.com/search?q=comprar+tenis+verdes+adidas" width="4000px" height="4000px">
+<embed id="bus" type="text/html" src="https://www.bing.com/search?q=comprar+tenis+verdes+adidas" width="6000px" height="6000px">
 </div>
 
 
