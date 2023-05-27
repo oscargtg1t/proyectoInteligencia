@@ -278,6 +278,7 @@ echo '<input id="urlapi" type="text" value="https://picserch.azurewebsites.net/i
 
 
       </form>
+ <script>
 function subir(){
     document.getElementById('file1').click();
     alert('funciona');
